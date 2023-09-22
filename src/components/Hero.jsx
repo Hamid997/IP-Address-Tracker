@@ -61,7 +61,7 @@ export default function Hero({ onSearch }) { // Receive the callback function as
           <div className="infoView">
             <h2>Location</h2>
             <p>
-              {mapData.location.city},{mapData.location.region}{mapData.location.postalCode}
+              {mapData.location.city},{mapData.location.region}
             </p>
           </div>
           <div className="infoView">
