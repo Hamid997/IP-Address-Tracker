@@ -6,11 +6,11 @@ export default function Hero({ onSearch }) { // Receive the callback function as
   const [ipAddress, setIpAddress] = useState('');
   const [mapData, setMapData] = useState(null);
 
-  // const API_Key = "at_5hqvmJauu36aTBeF2DxorMwrliync";
+  const API_Key = "at_5hqvmJauu36aTBeF2DxorMwrliync";
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`https://geo.ipify.org/api/v2/country,city?apiKey=${import.meta.env.VITE_APP_IP_KEY}&ipAddress=${ipAddress}`);
+      const response = await axios.get(`https://geo.ipify.org/api/v2/country,city?apiKey=${API_Key}&ipAddress=${ipAddress}`);
       const data = response.data; // Store the data first
       setMapData(data); // Update the state
       onSearch(data); // Call the callback function to send data to App.jsx
