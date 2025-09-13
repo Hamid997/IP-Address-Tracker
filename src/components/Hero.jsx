@@ -6,7 +6,7 @@ export default function Hero({ onSearch }) { // Receive the callback function as
   const [ipAddress, setIpAddress] = useState('');
   const [mapData, setMapData] = useState(null);
 
-  const API_Key = "at_uCM2CudigQM85iyHwHuC7JMue15u2";
+  const API_Key = "at_DarUvvF52QoS7v9Urc7ABgFwfqujW";
   // const API_Key = "at_5hqvmJauu36aTBeF2DxorMwrliync";
 
 
@@ -79,4 +79,5 @@ export default function Hero({ onSearch }) { // Receive the callback function as
     </div>
   );
 }
+
 
